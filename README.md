@@ -177,7 +177,7 @@ pip install ms-swift -U
 ```
 #### 2. Fine-Tuning
 
-Our SFT dataset consists of two parts: 200 pure text samples and 800 samples with associated images. Download the SFT dataset from 🤗[MathBook-SFT](https://huggingface.co/datasets/We-Math/We-Math2.0-SFT) and refer to the script below for fine-tuning. After downloading the dataset from HuggingFace, please make sure to convert all image paths in mathbook_sft.jsonl to absolute paths.
+Our SFT dataset consists of two parts: 200 pure text samples and 800 samples with associated images. Download the SFT dataset from 🤗[MathBook-SFT](https://huggingface.co/datasets/We-Math/We-Math2.0-SFT) and refer to the script below for fine-tuning. (We found that in some versions, you may need to change the ```mathbook_sft.jsonl``` paths to absolute paths.)
 
 ```bash
 nproc_per_node=8
